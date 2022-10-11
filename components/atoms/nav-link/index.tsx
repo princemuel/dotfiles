@@ -22,8 +22,8 @@ const NavLink = ({ href, children, activeClassName, ...props }: Props) => {
     href === sanitizedPath || sanitizedPath.startsWith(href + '/');
 
   const className = isCurrentPath
-    ? `nav-link ${activeClass} ${childClassName} `.trim()
-    : `nav-link ${childClassName}`.trim();
+    ? `${activeClass} ${childClassName} `.trim()
+    : `${childClassName}`.trim();
 
   return (
     <Link href={href} passHref {...props}>

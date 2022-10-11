@@ -1,7 +1,13 @@
-type Props = {};
+// import { links } from 'common';
 
-const Footer = (props: Props) => {
-  return <footer>Footer</footer>;
+const Footer = () => {
+  return (
+    <footer className=''>
+      {/* LOGO */}
+      {/* NAVIGATION */}
+      {/* SOCIAL */}
+    </footer>
+  );
 };
 
 export { Footer };
