@@ -1,7 +1,7 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
+import type { NextPageWithLayout } from 'types';
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
   return (
     <div className=''>
       <Head>

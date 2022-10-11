@@ -1,7 +1,9 @@
+import type { NextPageWithLayout } from 'types';
+
 type Props = {};
 
-const Projects = (props: Props) => {
-  return <h1>Projects</h1>;
+const Projects: NextPageWithLayout<Props> = (props) => {
+  return <h1>PROJECTS</h1>;
 };
 
 export default Projects;

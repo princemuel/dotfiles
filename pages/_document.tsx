@@ -18,6 +18,16 @@ export default function MyDocument() {
         />
         <meta name='description' content='' />
         <meta name='author' content='Prince Muel' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap'
+          rel='stylesheet'
+        />
       </Head>
 
       <body>

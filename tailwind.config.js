@@ -17,46 +17,48 @@ module.exports = {
     colors: {
       current: 'currentColor',
       transparent: 'transparent',
-      neutral: '#ffffff',
+      neutral: {
+        100: '#ffffff',
+        900: '#000000',
+      },
       primary: {
-        100: '#f4f7fd',
-        200: '#e4ebfa',
-        300: '#a8a4ff',
-        400: '#828fa3',
-        500: '#635fc7',
-        600: '#3e3f4e',
-        700: '#2b2c37',
-        800: '#20212c',
-        900: '#000112',
+        100: '#5fb4a2',
+        200: '#203a4c',
+        300: '#33323d',
       },
       accent: {
-        100: '#ff9898',
-        200: '#ea5555',
+        100: '#fafafa',
+        200: '#eaeaeb',
+        300: '#f43030',
       },
     },
 
     fontFamily: {
-      sans: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
+      serif: ['Ibarra Real Nova', ...defaultTheme.fontFamily.serif],
+      sans: ['Public Sans', ...defaultTheme.fontFamily.sans],
     },
 
     fontSize: {
       100: '0.8rem',
       200: '1rem',
       300: '1.2rem',
-      400: '1.3rem',
-      500: '1.5rem',
-      600: '1.8rem',
-      700: '2.4rem', //
-      800: '1.875rem',
-      900: '2.25rem',
+      400: '1.5rem',
+      500: '1.6rem',
+      600: '2.4rem',
+      700: '3.2rem', //
+      800: '4rem',
+      900: '5rem',
     },
 
     lineHeight: {
-      100: '0.8rem',
-      200: '1.5rem',
-      300: '1.9rem',
-      400: '2.3rem',
+      100: '1.175rem',
+      200: '1.41rem',
+      300: '1.8rem',
+      400: '1.9rem',
       500: '3rem',
+      600: '3.6rem',
+      700: '4.2rem',
+      800: '5rem',
     },
 
     screens: {
