@@ -1,1 +1,2 @@
-export * from '.';
+export * from './logo';
+export * from './navlink';
