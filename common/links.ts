@@ -14,7 +14,7 @@ export const links = {
     },
     {
       id: 'contact',
-      text: 'contacct me',
+      text: 'contact me',
       url: '/speakers',
     },
   ],
