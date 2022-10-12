@@ -50,6 +50,13 @@ module.exports = {
       900: '5rem',
     },
 
+    letterSpacing: {
+      ...defaultTheme.letterSpacing,
+      tightest: '-0.45px',
+      tighter: ' -0.36px',
+      tight: ' -0.29px',
+    },
+
     lineHeight: {
       100: '1.175rem',
       200: '1.41rem',
@@ -59,12 +66,6 @@ module.exports = {
       600: '3.6rem',
       700: '4.2rem',
       800: '5rem',
-    },
-    letterSpacing: {
-      ...defaultTheme.letterSpacing,
-      tightest: '-0.45px',
-      tighter: ' -0.36px',
-      tight: ' -0.29px',
     },
 
     screens: {
