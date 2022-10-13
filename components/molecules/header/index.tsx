@@ -9,7 +9,7 @@ const Header = (props: Props) => {
       <Logo />
 
       <nav>
-        <ul role={'list'} aria-label='Secondary Navigation'>
+        <ul role={'list'} className='' aria-label='Primary Navigation'>
           {links?.navigation?.map((link) => (
             <li key={link.text}>
               <NavLink activeClassName='' href={link.url}>

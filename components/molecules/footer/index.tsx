@@ -9,11 +9,11 @@ const Footer = () => {
 
       {/* NAVIGATION */}
       <nav>
-        <ul role={'list'} aria-label='Secondary Navigation'>
+        <ul role={'list'} className='' aria-label='Secondary Navigation'>
           {links?.navigation?.map((link) => (
             <li key={link.text}>
               <NavLink activeClassName='' href={link.url}>
-                <a>{link.text}</a>
+                <a className=''>{link.text}</a>
               </NavLink>
             </li>
           ))}
@@ -21,11 +21,10 @@ const Footer = () => {
       </nav>
 
       {/* SOCIAL */}
-      <ul role={'list'}>
+      <ul role={'list'} className='' aria-label='Social Links'>
         {links?.social?.map((link) => (
           <li key={link.alt}>
-            <a>
-              {link?.url}
+            <a href={link?.url}>
               <Image src={link?.icon} alt={link?.alt} />
             </a>
           </li>
