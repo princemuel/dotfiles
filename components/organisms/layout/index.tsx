@@ -1,5 +1,5 @@
 import { Footer, Header } from 'components';
-import { ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 
 type Props = {
   children: ReactNode;
@@ -7,11 +7,11 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
+    <Fragment>
       <Header />
       <main id='main-content'>{children}</main>
       <Footer />
-    </>
+    </Fragment>
   );
 };
 
