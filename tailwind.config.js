@@ -55,7 +55,7 @@ module.exports = {
       tightest: '-0.45px',
       tighter: ' -0.36px',
       tight: ' -0.29px',
-      wide: '2px',
+      widest: '2px',
     },
 
     lineHeight: {
@@ -93,12 +93,12 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities, theme }) {
-      addUtilities({
-        '.btn': {
-          '--flow-space': '<value>',
-        },
-      });
-    }),
+    // plugin(function ({ addUtilities, theme }) {
+    //   addUtilities({
+    //     '.btn': {
+    //       '--flow-space': '<value>',
+    //     },
+    //   });
+    // }),
   ],
 };
