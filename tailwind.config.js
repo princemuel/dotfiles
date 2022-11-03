@@ -93,12 +93,12 @@ module.exports = {
     },
   },
   plugins: [
-    // plugin(function ({ addUtilities, theme }) {
-    //   addUtilities({
-    //     '.btn': {
-    //       '--flow-space': '<value>',
-    //     },
-    //   });
-    // }),
+    plugin(function ({ addUtilities, theme }) {
+      addUtilities({
+        '.icon': {
+          fill: 'currentColor',
+        },
+      });
+    }),
   ],
 };
