@@ -7,15 +7,17 @@ type Props = {
 };
 
 const Logo = ({ className }: Props) => {
-  const classes = trim(`icon ${Boolean(className) ? className : ''}`);
+  const classes = trim(`${Boolean(className) ? className : ''}`);
   return (
     <Link href={'/'} passHref>
-      <a aria-label='go home'>
+      <a aria-label='go home' className={classes}>
         <span className='sr-only'>home logo</span>
-        <icons.logo className={classes} aria-hidden='true' />
+        <icons.logo aria-hidden='true' className='icon' />
       </a>
     </Link>
   );
 };
 
 export { Logo };
+
+//  className={`${Boolean(className) ? className : ''}`}
