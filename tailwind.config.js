@@ -98,6 +98,10 @@ module.exports = {
         '.icon': {
           fill: 'currentColor',
         },
+        '.w-full-shadow': {
+          boxShadow: '0 0 0 100vmax currentColor, 0 0 2rem currentColor',
+          clipPath: 'inset(0 -100vmax)',
+        },
       });
     }),
   ],
