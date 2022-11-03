@@ -1,4 +1,5 @@
-import { links } from 'common';
+import { icons } from 'common';
+import { trim } from 'helpers';
 import Link from 'next/link';
 
 type Props = {
@@ -6,12 +7,12 @@ type Props = {
 };
 
 const Logo = ({ className }: Props) => {
-  const classes = `icon ${Boolean(className) ? className : ''} `.trim();
+  const classes = trim(`icon ${Boolean(className) ? className : ''}`);
   return (
     <Link href={'/'} passHref>
       <a aria-label='go home'>
         <span className='sr-only'>home logo</span>
-        <links.logo.icon className={classes} aria-hidden='true' />
+        <icons.logo className={classes} aria-hidden='true' />
       </a>
     </Link>
   );
