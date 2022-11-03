@@ -1,12 +1,12 @@
-import IconArrowLeftSVG from 'assets/shared/icons/arrow-left.svg';
-import IconArrowRightSVG from 'assets/shared/icons/arrow-right.svg';
-import IconCloseSVG from 'assets/shared/icons/close.svg';
-import IconArrowDownSVG from 'assets/shared/icons/down-arrows.svg';
-import IconGithubSVG from 'assets/shared/icons/github.svg';
-import IconHamburgerSVG from 'assets/shared/icons/hamburger.svg';
-import IconLinkedInSVG from 'assets/shared/icons/linkedin.svg';
-import IconTwitterSVG from 'assets/shared/icons/twitter.svg';
-import LogoSVG from 'assets/shared/logo.svg';
+import IconArrowLeftSVG from 'assets/images/arrow-left.svg';
+import IconArrowRightSVG from 'assets/images/arrow-right.svg';
+import IconCloseSVG from 'assets/images/close.svg';
+import IconArrowDownSVG from 'assets/images/down-arrows.svg';
+import IconGithubSVG from 'assets/images/github.svg';
+import IconHamburgerSVG from 'assets/images/hamburger.svg';
+import IconLinkedInSVG from 'assets/images/linkedin.svg';
+import LogoSVG from 'assets/images/logo.svg';
+import IconTwitterSVG from 'assets/images/twitter.svg';
 
 export {
   IconArrowLeftSVG,
