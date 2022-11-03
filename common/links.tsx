@@ -1,12 +1,30 @@
 import * as React from 'react';
 import {
+  IconArrowDownSVG,
+  IconArrowLeftSVG,
+  IconArrowRightSVG,
+  IconCloseSVG,
   IconGithubSVG,
+  IconHamburgerSVG,
   IconLinkedInSVG,
   IconTwitterSVG,
   LogoSVG,
 } from './images';
 
-export interface IconProps extends React.ComponentPropsWithoutRef<'svg'> {}
+interface IconProps extends React.ComponentPropsWithoutRef<'svg'> {}
+
+export const icons = {
+  logo: (props: IconProps) => <LogoSVG {...props} />,
+  arrow: {
+    down: (props: IconProps) => <IconArrowDownSVG {...props} />,
+    left: (props: IconProps) => <IconArrowLeftSVG {...props} />,
+    right: (props: IconProps) => <IconArrowRightSVG {...props} />,
+  },
+  mobile: {
+    open: (props: IconProps) => <IconHamburgerSVG {...props} />,
+    close: (props: IconProps) => <IconCloseSVG {...props} />,
+  },
+};
 
 export const links = {
   navigation: [
@@ -26,9 +44,6 @@ export const links = {
       url: '/speakers',
     },
   ],
-  logo: {
-    icon: (props: IconProps) => <LogoSVG {...props} />,
-  },
   social: [
     {
       id: 'icon-github',
