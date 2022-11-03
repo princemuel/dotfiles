@@ -11,7 +11,7 @@ import {
   LogoSVG,
 } from './images';
 
-interface IconProps extends React.ComponentPropsWithoutRef<'svg'> {}
+export interface IconProps extends React.ComponentPropsWithoutRef<'svg'> {}
 
 export const icons = {
   logo: (props: IconProps) => <LogoSVG {...props} />,
