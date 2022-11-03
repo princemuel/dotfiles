@@ -1,12 +1,23 @@
-import { LogoSVG } from 'common';
-import Image from 'next/future/image';
+import { icons } from 'common';
+import { trim } from 'helpers';
+import Link from 'next/link';
 
-const Logo = () => {
+type Props = {
+  className?: string;
+};
+
+const Logo = ({ className }: Props) => {
+  const classes = trim(`${Boolean(className) ? className : ''}`);
   return (
-    <div>
-      <Image src={LogoSVG} alt='Logo' />
-    </div>
+    <Link href={'/'} passHref>
+      <a aria-label='go home' className={classes}>
+        <span className='sr-only'>home logo</span>
+        <icons.logo aria-hidden='true' className='icon' />
+      </a>
+    </Link>
   );
 };
 
 export { Logo };
+
+//  className={`${Boolean(className) ? className : ''}`}

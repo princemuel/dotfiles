@@ -1,5 +1,4 @@
-import { IconArrowDownSVG } from 'common';
-import Image from 'next/future/image';
+import { icons } from 'common';
 import Head from 'next/head';
 import type { NextPageWithLayout } from 'types';
 
@@ -19,14 +18,14 @@ const Home: NextPageWithLayout = () => {
 
       <button className='btn btn-primary'>
         <span>
-          <Image src={IconArrowDownSVG} alt='' />
+          <icons.arrow.down />
         </span>
         <span>About Me</span>
       </button>
 
       <button className='btn btn-primary' disabled={true}>
         <span>
-          <Image src={IconArrowDownSVG} alt='' />
+          <icons.arrow.down />
         </span>
         <span>About Me</span>
       </button>

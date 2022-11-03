@@ -93,12 +93,16 @@ module.exports = {
     },
   },
   plugins: [
-    // plugin(function ({ addUtilities, theme }) {
-    //   addUtilities({
-    //     '.btn': {
-    //       '--flow-space': '<value>',
-    //     },
-    //   });
-    // }),
+    plugin(function ({ addUtilities, theme }) {
+      addUtilities({
+        '.icon': {
+          fill: 'currentColor',
+        },
+        '.w-full-shadow': {
+          boxShadow: '0 0 0 100vmax currentColor, 0 0 2rem currentColor',
+          clipPath: 'inset(0 -100vmax)',
+        },
+      });
+    }),
   ],
 };
