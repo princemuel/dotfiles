@@ -246,7 +246,7 @@ Version: 01
 /*            UTILITIES              */
 /* ================================= */
 @layer utilities {
-  .p-container {
+  .h-container {
     --max-width: 111rem;
     --container-padding: 1.6rem;
 
@@ -258,11 +258,6 @@ Version: 01
   }
   .flow-space--small {
     --flow-space: 1rem;
-  }
-
-  .w-full-shadow {
-    box-shadow: 0 0 0 100vmax currentColor, 0 0 2rem currentColor;
-    clip-path: inset(0 -100vmax);
   }
 }
 
