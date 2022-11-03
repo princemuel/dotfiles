@@ -6,7 +6,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <header>
-      <Logo />
+      <Logo className='' />
 
       <nav>
         <ul role={'list'} className='' aria-label='Primary Navigation'>
