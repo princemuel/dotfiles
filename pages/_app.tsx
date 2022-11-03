@@ -1,7 +1,7 @@
+import 'assets/styles/main.css';
 import { Layout } from 'components';
 import Head from 'next/head';
 import type { AppPropsWithLayout } from 'types';
-import '../styles/main.css';
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
