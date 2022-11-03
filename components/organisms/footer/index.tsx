@@ -1,12 +1,13 @@
 import { links } from 'common';
 import { Logo, NavLink } from 'components/atoms';
+import { SocialLinks } from 'components/molecules';
 
 const Footer = () => {
   // text-neutral-100 bg-primary-300;
   return (
-    <footer className='py-20 sm:py-11'>
-      <div className='app-container flex flex-col sm:flex-row items-center gap-10'>
-        <Logo className='' />
+    <footer>
+      <div className='h-container flex flex-col sm:flex-row items-center gap-10 py-20 sm:py-10 bg-primary-300 w-full-shadow'>
+        <Logo className='text-neutral-100' />
         {/* NAVIGATION */}
         <nav>
           <ul
@@ -15,29 +16,19 @@ const Footer = () => {
             aria-label='Secondary Navigation'
           >
             {links?.navigation?.map((link) => (
-              <li key={link.text} className='navlist--item'>
+              <li
+                key={link.text}
+                className='text-neutral-100 hover:text-primary-100'
+              >
                 <NavLink activeClassName='' href={link.url}>
-                  <a className='navlist--link'>{link.text}</a>
+                  <a>{link.text}</a>
                 </NavLink>
               </li>
             ))}
           </ul>
         </nav>
-        {/* SOCIAL */}
-        <ul
-          role={'list'}
-          className='flex flex-row items-center gap-4 sm:ml-auto'
-          aria-label='Social Links'
-        >
-          {links?.social?.map((link) => (
-            <li key={link.alt}>
-              <a aria-label={link?.alt} href={link?.url}>
-                <span className='sr-only'>{link.alt}</span>
-                <link.icon className='h-6 w-6' aria-hidden='true' />
-              </a>
-            </li>
-          ))}
-        </ul>
+
+        <SocialLinks links={links} />
       </div>
     </footer>
   );
