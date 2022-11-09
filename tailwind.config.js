@@ -93,7 +93,19 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities, theme }) {
+    plugin(function ({ addComponents, addUtilities, theme }) {
+      addComponents({
+        '.btn': {
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '1rem',
+          paddingBlock: '1.5rem',
+          paddingInline: '2.75rem',
+          fontSize: theme('fontSize.400'),
+          lineHeight: theme('lineHeight.200'),
+          letterSpacing: theme('letterSpacing.200'),
+        },
+      });
       addUtilities({
         '.icon': {
           fill: 'currentColor',
@@ -101,6 +113,13 @@ module.exports = {
         '.w-full-shadow': {
           boxShadow: '0 0 0 100vmax currentColor, 0 0 2rem currentColor',
           clipPath: 'inset(0 -100vmax)',
+        },
+        '.h-container': {
+          '--max-width': '111rem',
+          '--container-padding': '1.6rem',
+
+          width: 'min(var(--max-width), 100% - (var(--container-padding) * 2))',
+          marginInline: 'auto',
         },
       });
     }),
