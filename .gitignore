@@ -160,3 +160,4 @@ design
 *.local.*
 !README.md
 server
+scripts
