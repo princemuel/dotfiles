@@ -34,9 +34,9 @@ export const links = {
       url: '/',
     },
     {
-      id: 'portfolio',
-      text: 'portfolio',
-      url: '/portfolio',
+      id: 'projects',
+      text: 'projects',
+      url: '/projects',
     },
     {
       id: 'blog',
