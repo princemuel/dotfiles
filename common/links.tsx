@@ -39,6 +39,11 @@ export const links = {
       url: '/portfolio',
     },
     {
+      id: 'blog',
+      text: 'blog',
+      url: '/blog',
+    },
+    {
       id: 'contact',
       text: 'contact me',
       url: '/speakers',
