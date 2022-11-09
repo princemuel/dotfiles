@@ -3,7 +3,6 @@ import { Logo, NavLink } from 'components/atoms';
 import { SocialLinks } from 'components/molecules';
 
 const Footer = () => {
-  // text-neutral-100 bg-primary-300;
   return (
     <footer>
       <div className='h-container flex flex-col sm:flex-row items-center gap-10 py-20 sm:py-10 bg-primary-300 w-full-shadow'>
