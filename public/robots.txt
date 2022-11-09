@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+# robots.txt
+
+# Block all crawlers for /accounts
+User-agent: *
+Allow: /
+Disallow: /accounts
+
+Sitemap: https://princemuel.vercel.app/sitemap.xml
