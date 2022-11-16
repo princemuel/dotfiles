@@ -192,7 +192,7 @@ Version: 01
     @apply text-500 font-sans font-normal leading-500;
   }
   .body-200 {
-    @apply text-500 font-sans font-normal leading-500;
+    @apply text-400 font-sans font-normal leading-500;
   }
 
   :where(li a) {
