@@ -192,11 +192,11 @@ Version: 01
     @apply text-500 font-sans font-normal leading-500;
   }
   .body-200 {
-    @apply text-500 font-sans font-normal leading-500;
+    @apply text-400 font-sans font-normal leading-500;
   }
 
   :where(li a) {
-    @apply text-300 font-sans font-normal no-underline uppercase;
+    @apply text-[1.3rem] font-sans font-normal no-underline uppercase;
   }
 }
 

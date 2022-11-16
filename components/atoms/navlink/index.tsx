@@ -1,3 +1,4 @@
+import { trim } from 'helpers';
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import { Children, cloneElement, ReactElement, ReactNode } from 'react';
@@ -22,13 +23,13 @@ const NavLink = ({ href, children, activeClassName, ...props }: Props) => {
     href === sanitizedPath || sanitizedPath.startsWith(href + '/');
 
   const className = isCurrentPath
-    ? `${activeClass} ${childClassName} `.trim()
-    : `${childClassName}`.trim();
+    ? `${activeClass} ${childClassName} `
+    : `${childClassName}`;
 
   return (
     <Link href={href} passHref {...props}>
       {cloneElement(child, {
-        className: className || null,
+        className: trim(className) || null,
         'aria-current': isCurrentPath ? 'page' : false,
       })}
     </Link>
