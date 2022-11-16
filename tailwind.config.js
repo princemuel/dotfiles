@@ -83,6 +83,10 @@ module.exports = {
         '2xl': '96em', // => @media (min-width: 1536px) { ... }
       },
 
+      gridTemplateAreas: {
+        desktop: ['info social', 'copy copy'],
+        ipad: ['info info', 'copy social'],
+      },
       gridTemplateColumns: {
         // arbitrary values
         'fill-16': 'repeat(auto-fill, minmax(4rem, 1fr))',
@@ -93,6 +97,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@savvywombat/tailwindcss-grid-areas'),
     plugin(function ({ addComponents, addUtilities, theme }) {
       addComponents({
         '.btn': {

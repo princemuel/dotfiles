@@ -16,6 +16,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^3.0.0",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
