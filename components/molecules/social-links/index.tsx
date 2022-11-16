@@ -9,7 +9,7 @@ const SocialLinks = ({ links }: Props) => {
   return (
     <ul
       role={'list'}
-      className='flex items-center gap-4 md:justify-self-end lg:self-end'
+      className='md:grid-in-social flex items-center gap-4 md:justify-self-end lg:self-end'
       aria-label='Social Links'
     >
       {links?.social?.map((link) => (
