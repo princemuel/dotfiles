@@ -1,1 +1,2 @@
-export * from './media-object';
+export * from './cta-section';
+export * from './projects';
