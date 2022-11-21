@@ -9,7 +9,7 @@ const Header = (props: Props) => {
       <div className='h-container bg-neutral-100 w-full-shadow'>
         <Logo className='' />
 
-        <nav>
+        <nav className=''>
           <ul role={'list'} className='' aria-label='Primary Navigation'>
             {links?.navigation?.map((link) => (
               <li key={link.text} className='hover:text-primary-100'>
