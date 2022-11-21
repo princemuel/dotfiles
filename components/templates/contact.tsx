@@ -6,9 +6,9 @@ type Props = {};
 const ContactPageTemplate = (props: Props) => {
   return (
     <main id='main-content' aria-label='Contact Page Content'>
-      <section className='h-container mt-20 py-12 space-y-8 > * + * border-y border-primary-300/20 | md:flex'>
+      <section className='h-container mt-20 py-12 border-y border-primary-300/20 | flex flex-col lg:flex-row gap-8'>
         <h2 className='flex-1'>Get in Touch</h2>
-        <div className='flex-1 '>
+        <div className='flex-1'>
           <p className='body-200'>
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
@@ -26,13 +26,17 @@ const ContactPageTemplate = (props: Props) => {
             aria-label='Social Links'
           >
             {links?.social?.map((link) => (
-              <SocialLink key={link?.alt} {...link} classes='' />
+              <SocialLink
+                key={link?.alt}
+                {...link}
+                classes='hover:text-primary-100'
+              />
             ))}
           </ul>
         </div>
       </section>
 
-      <section className='h-container mt-20 space-y-8 > * + * | md:flex'>
+      <section className='h-container mt-20 | flex flex-col lg:flex-row gap-8'>
         <h2 className='flex-1'>Contact Me</h2>
         <form className='flex-1 text-[1.3rem] leading-500 space-y-12 > * + *'>
           <div className='space-y-4 > * + *'>
