@@ -1,7 +1,10 @@
+import { ContactPageTemplate } from 'components';
+import type { NextPageWithLayout } from 'types';
+
 type Props = {};
 
-const ContactPage = (props: Props) => {
-  return <h1>ContactPage</h1>;
+const ContactPage: NextPageWithLayout<Props> = (props: Props) => {
+  return <ContactPageTemplate />;
 };
 
 export default ContactPage;

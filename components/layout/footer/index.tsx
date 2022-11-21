@@ -1,6 +1,5 @@
 import { links } from 'common';
-import { Logo, NavLink } from 'components/atoms';
-import { SocialLinks } from 'components/molecules';
+import { Logo, NavLink, SocialLink } from 'components/atoms';
 
 const Footer = () => {
   return (
@@ -44,7 +43,19 @@ const Footer = () => {
             Reserved
           </p>
 
-          <SocialLinks links={links} />
+          <ul
+            role={'list'}
+            className='md:grid-in-social flex items-center gap-4 md:justify-self-end lg:self-end'
+            aria-label='Social Links'
+          >
+            {links?.social?.map((link) => (
+              <SocialLink
+                key={link?.alt}
+                {...link}
+                classes='text-neutral-100 hover:text-primary-100'
+              />
+            ))}
+          </ul>
         </div>
       </section>
     </footer>
