@@ -119,6 +119,7 @@ Version: 01
   :where(img, picture, svg) {
     max-inline-size: 100%;
     block-size: auto;
+    object-fit: cover;
   }
   @media not all and (min-resolution: 0.001dpcm) {
     :where(img[loading='lazy']) {
@@ -220,7 +221,7 @@ Version: 01
     aspect-ratio: 1;
   }
   .btn-secondary {
-    @apply py-6 px-12 border border-solid border-primary-300 disabled:border-primary-300/25 text-primary-300 hover:text-neutral-100 disabled:text-primary-300/25  bg-neutral-100 hover:bg-primary-300 disabled:bg-neutral-100;
+    @apply justify-center py-6 px-12 border border-solid border-primary-300 disabled:border-primary-300/25 text-primary-300 hover:text-neutral-100 disabled:text-primary-300/25  bg-neutral-100 hover:bg-primary-300 disabled:bg-neutral-100;
   }
 
   .navlist {
