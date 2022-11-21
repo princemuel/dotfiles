@@ -1,4 +1,5 @@
 import { CTASection } from 'components/organisms';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -11,12 +12,10 @@ const HomepageTemplate = (props: Props) => {
       {/* IMG */}
       {/* HEADING */}
       {/* TEXT */}
-      {/* BUTTON */}
+      <Link href={`/products/['id']`} as={''} passHref>
+        <a className='btn btn-secondary'>View Project</a>
+      </Link>
       {/* ABOUT */}
-
-      {/* CTA  */}
-
-      {/* CTA  */}
 
       <CTASection />
     </main>
