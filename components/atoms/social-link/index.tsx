@@ -5,15 +5,16 @@ type Props = {
   url: string;
   icon: (props: IconProps) => JSX.Element;
   alt: string;
+  classes: string;
 };
 
-const SocialLink = ({ alt, url, icon: Icon }: Props) => {
+const SocialLink = ({ alt, url, icon: Icon, classes }: Props) => {
   return (
     <li>
       <a
         aria-label={alt}
         href={url}
-        className='text-neutral-100 hover:text-primary-100'
+        className={`${classes ? classes : ''}`?.trim()}
       >
         <span className='sr-only'>{alt}</span>
         <Icon aria-hidden='true' className='icon' />
