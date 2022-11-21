@@ -1,7 +1,14 @@
+import { CTASection } from 'components/organisms';
+
 type Props = {};
 
 const ProjectPageTemplate = (props: Props) => {
-  return <div>ProjectPageTemplate</div>;
+  return (
+    <main id='main-content' aria-label='Single Project Page Content'>
+      {/* <Project /> */}
+      <CTASection />
+    </main>
+  );
 };
 
 export { ProjectPageTemplate };
