@@ -98,19 +98,7 @@ module.exports = {
   },
   plugins: [
     require('@savvywombat/tailwindcss-grid-areas'),
-    plugin(function ({ addComponents, addUtilities, theme }) {
-      addComponents({
-        '.btn': {
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '1rem',
-          paddingBlock: '1.5rem',
-          paddingInline: '2.75rem',
-          fontSize: theme('fontSize.400'),
-          lineHeight: theme('lineHeight.200'),
-          letterSpacing: theme('letterSpacing.200'),
-        },
-      });
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.icon': {
           fill: 'currentColor',

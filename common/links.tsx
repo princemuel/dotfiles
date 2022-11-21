@@ -11,7 +11,7 @@ import {
   IconLinkedInSVG,
   IconTwitterSVG,
   LogoSVG,
-} from './images';
+} from './svg-icons';
 
 export interface IconProps extends React.ComponentPropsWithoutRef<'svg'> {}
 
@@ -48,7 +48,7 @@ export const links = {
     {
       id: 'contact',
       text: 'contact me',
-      url: '/speakers',
+      url: '/contact',
     },
   ],
   social: [

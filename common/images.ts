@@ -1,25 +1,15 @@
-import IconArrowLeftSVG from 'assets/images/arrow-left.svg';
-import IconArrowRightSVG from 'assets/images/arrow-right.svg';
-import IconCloseSVG from 'assets/images/close.svg';
-import IconArrowDownSVG from 'assets/images/down-arrows.svg';
-import IconFacebookSVG from 'assets/images/facebook.svg';
-import IconGithubSVG from 'assets/images/github.svg';
-import IconHamburgerSVG from 'assets/images/hamburger.svg';
-import IconInstagramSVG from 'assets/images/instagram.svg';
-import IconLinkedInSVG from 'assets/images/linkedin.svg';
-import LogoSVG from 'assets/images/logo.svg';
-import IconTwitterSVG from 'assets/images/twitter.svg';
+import ManageJPGDesktop from 'assets/images/pictures/portfolio/desktop/image-portfolio-manage.jpg';
+import ManageJPGDesktop2x from 'assets/images/pictures/portfolio/desktop/image-portfolio-manage@2x.jpg';
+import ManageJPGMobile from 'assets/images/pictures/portfolio/mobile/image-portfolio-manage.jpg';
+import ManageJPGMobile2x from 'assets/images/pictures/portfolio/mobile/image-portfolio-manage@2x.jpg';
+import ManageJPGTablet from 'assets/images/pictures/portfolio/tablet/image-portfolio-manage.jpg';
+import ManageJPGTablet2x from 'assets/images/pictures/portfolio/tablet/image-portfolio-manage@2x.jpg';
 
 export {
-  IconArrowLeftSVG,
-  IconArrowRightSVG,
-  IconArrowDownSVG,
-  IconCloseSVG,
-  IconGithubSVG,
-  IconHamburgerSVG,
-  IconLinkedInSVG,
-  IconTwitterSVG,
-  IconFacebookSVG,
-  IconInstagramSVG,
-  LogoSVG,
+  ManageJPGMobile,
+  ManageJPGMobile2x,
+  ManageJPGTablet,
+  ManageJPGTablet2x,
+  ManageJPGDesktop,
+  ManageJPGDesktop2x,
 };
