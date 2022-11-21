@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
-type Props = {};
-
-const CTASection = (props: Props) => {
+const CTASection = () => {
   return (
     <section
       className='h-container mt-20 flex flex-col sm:flex-row items-center gap-12 py-20 text-center sm:text-left'
