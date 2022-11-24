@@ -153,11 +153,9 @@ dist
 # misc
 dist
 dist-ssr
-design
 *.pem
 
 .local
 *.local.*
-!README.md
 server
 scripts
