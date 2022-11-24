@@ -108,7 +108,7 @@ Version: 01
   :where(:disabled) {
     cursor: not-allowed;
   }
-  :where(label:has(> input:disabled), label:has(+ input:disabled)) {
+  :where(label:has(* > input:disabled), label:has(* + input:disabled)) {
     cursor: not-allowed;
   }
 
