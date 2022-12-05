@@ -38,11 +38,6 @@ Version: 01
     }
   }
 
-  html,
-  html:focus-within {
-    scroll-behavior: smooth;
-  }
-
   *,
   *::before,
   *::after {
@@ -130,8 +125,10 @@ Version: 01
       clip-path: inset(0.5px);
     }
   }
-  :where(svg) {
+  
+  :where(svg[class]) {
     --clr-icon: currentColor;
+    fill: currentColor;
   }
 
   /* Anchor elements that don't have a class get default styles */

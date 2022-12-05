@@ -69,7 +69,7 @@ const ContactPageTemplate = (props: Props) => {
             </label>
             <textarea
               name=''
-              className='w-full py-4 px-6 bg-primary-300/20'
+              className='w-full min-h-[15rem] py-4 px-6 bg-primary-300/20'
               id='message'
               placeholder='How can I help'
             ></textarea>

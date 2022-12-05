@@ -9,9 +9,10 @@ import Link from 'next/link';
 
 type Props = {
   isPriority: boolean;
+  id: string;
 };
 
-const ProjectCard = ({ isPriority }: Props) => {
+const ProjectCard = ({ isPriority, id }: Props) => {
   return (
     <article
       className={`flex flex-col odd:sm:flex-row even:sm:flex-row-reverse gap-16 md:gap-20 lg:gap-32`}
@@ -41,7 +42,11 @@ const ProjectCard = ({ isPriority }: Props) => {
           slider.
         </p>
 
-        <Link href={`/products/['id']`} as={''} passHref>
+        <Link
+          href={`/projects/['id']`}
+          as={`/projects/${encodeURIComponent(id)}`}
+          passHref
+        >
           <a className='btn btn-secondary'>View Project</a>
         </Link>
       </div>

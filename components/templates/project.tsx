@@ -1,11 +1,11 @@
-import { CTASection } from 'components/organisms';
+import { CTASection, Project } from 'components/organisms';
 
 type Props = {};
 
 const ProjectPageTemplate = (props: Props) => {
   return (
     <main id='main-content' aria-label='Single Project Page Content'>
-      {/* <Project /> */}
+      <Project />
       <CTASection />
     </main>
   );
