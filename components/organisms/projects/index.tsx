@@ -11,7 +11,9 @@ const Projects = (props: Props) => {
       aria-label='projects list'
     >
       {projects?.map((project, i) => {
-        return <ProjectCard key={project + i} isPriority={i === 0} />;
+        return (
+          <ProjectCard key={project + i} id={`${i + 1}`} isPriority={i === 0} />
+        );
       })}
     </section>
   );

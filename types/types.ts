@@ -1,3 +1,4 @@
+import InferNextPropsType from 'infer-next-props-type';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ParsedUrlQuery } from 'querystring';
@@ -22,6 +23,7 @@ export type {
   GetStaticProps,
   NextPage,
 } from 'next';
+export type { InferNextPropsType };
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -35,7 +37,9 @@ export type AppPropsWithLayout = AppProps & {
  *===============================*
 */
 
-export interface Params extends ParsedUrlQuery {}
+export interface Params extends ParsedUrlQuery {
+  [key: string]: string | string[] | undefined;
+}
 export type Unarray<T> = T extends Array<infer U> ? U : T;
 export type ReturnValue<T> = T extends (...args: any[]) => infer R ? R : T;
 
