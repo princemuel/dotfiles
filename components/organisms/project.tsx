@@ -1,37 +1,44 @@
+import {
+  Heading,
+  Section as MainContent,
+  Section,
+  Text,
+} from 'components/atoms';
+
 type Props = {};
 
 const Project = (props: Props) => {
   return (
-    <main id='main-content' aria-label='Contact Page Content'>
-      <section className='h-container' aria-label=''>
+    <MainContent as='main' id='main-content' aria-label='Contact Page Content'>
+      <Section className='h-container' aria-label=''>
         <figure></figure>
-      </section>
+      </Section>
 
-      <article className='h-container mt-40' aria-label=''>
+      <Section as='article' className='h-container mt-40' aria-label=''>
         <div className='flex flex-col items-start gap-12 py-24 sm:py-10 border-y border-primary-300/10'>
-          <h2>Manage</h2>
+          <Heading>Manage</Heading>
 
-          <p className='body-100'>
+          <Text className='body-100'>
             This project required me to build a fully responsive landing page to
             the designs provided. I used HTML5, along with CSS Grid and
             JavaScript for the areas that required interactivity, such as the
             testimonial slider.
-          </p>
+          </Text>
 
           <div>
-            <p className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
+            <Text className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
               <span>Interaction Design</span>
               <span>/</span>
               <span>Front End Development</span>
-            </p>
+            </Text>
 
-            <p className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
+            <Text className='flex gap-2 text-primary-100 text-400 font-sans font-bold leading-500'>
               <span>HTML</span>
               <span>/</span>
               <span>CSS</span>
               <span>/</span>
               <span>JS</span>
-            </p>
+            </Text>
           </div>
 
           <a
@@ -41,12 +48,12 @@ const Project = (props: Props) => {
             Visit Website
           </a>
         </div>
-      </article>
+      </Section>
 
-      <section className='h-container' aria-label=''>
+      <Section className='h-container' aria-label=''>
         <figure></figure>
-      </section>
-    </main>
+      </Section>
+    </MainContent>
   );
 };
 

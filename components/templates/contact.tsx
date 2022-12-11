@@ -1,15 +1,21 @@
 import { links } from 'common';
-import { SocialLink } from 'components/atoms';
+import {
+  Heading,
+  Section as MainContent,
+  Section,
+  SocialLink,
+  Text,
+} from 'components/atoms';
 
 type Props = {};
 
 const ContactPageTemplate = (props: Props) => {
   return (
-    <main id='main-content' aria-label='Contact Page Content'>
-      <section className='h-container mt-20 py-12 border-y border-primary-300/20 | flex flex-col lg:flex-row gap-8'>
-        <h2 className='flex-1'>Get in Touch</h2>
+    <MainContent as='main' id='main-content' aria-label='Contact Page Content'>
+      <Section className='h-container mt-20 py-12 border-y border-primary-300/20 | flex flex-col lg:flex-row gap-8'>
+        <Heading className='flex-1'>Get in Touch</Heading>
         <div className='flex-1'>
-          <p className='body-200'>
+          <Text className='body-200'>
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
             opportunities. My preference would be to find a position in a
@@ -18,7 +24,7 @@ const ContactPageTemplate = (props: Props) => {
             person who will always approach each task with a sense of purpose
             and attention to detail. Please do feel free to check out my online
             profiles below and get in touch using the form.
-          </p>
+          </Text>
 
           <ul
             role={'list'}
@@ -34,10 +40,10 @@ const ContactPageTemplate = (props: Props) => {
             ))}
           </ul>
         </div>
-      </section>
+      </Section>
 
-      <section className='h-container mt-20 | flex flex-col lg:flex-row gap-8'>
-        <h2 className='flex-1'>Contact Me</h2>
+      <Section className='h-container mt-20 | flex flex-col lg:flex-row gap-8'>
+        <Heading className='flex-1'>Contact Me</Heading>
         <form className='flex-1 text-[1.3rem] leading-500 space-y-12 > * + *'>
           <div className='space-y-4 > * + *'>
             <label className='block font-bold' htmlFor='name'>
@@ -79,8 +85,8 @@ const ContactPageTemplate = (props: Props) => {
             Send Message
           </button>
         </form>
-      </section>
-    </main>
+      </Section>
+    </MainContent>
   );
 };
 

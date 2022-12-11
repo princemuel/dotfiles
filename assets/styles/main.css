@@ -24,7 +24,7 @@ Version: 01
     box-sizing: border-box;
     font-size: 56.25%;
     text-rendering: optimizeSpeed;
-    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
   }
 
   @media (min-width: 75em) {
@@ -70,6 +70,7 @@ Version: 01
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
 
     position: relative;
   }
@@ -125,7 +126,7 @@ Version: 01
       clip-path: inset(0.5px);
     }
   }
-  
+
   :where(svg[class]) {
     --clr-icon: currentColor;
     fill: currentColor;

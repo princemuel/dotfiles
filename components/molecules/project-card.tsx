@@ -4,6 +4,7 @@ import {
   ManageJPGMobile2x,
   ManageJPGTablet,
 } from 'common';
+import { Heading } from 'components/atoms';
 import Image from 'next/future/image';
 import Link from 'next/link';
 
@@ -33,7 +34,7 @@ const ProjectCard = ({ isPriority, id }: Props) => {
       </figure>
 
       <div className='flex-1 flex flex-col items-start justify-center gap-12 py-24 sm:py-10 border-y border-primary-300/10'>
-        <h2>Manage</h2>
+        <Heading>Manage</Heading>
 
         <p className='body-100'>
           This project required me to build a fully responsive landing page to
