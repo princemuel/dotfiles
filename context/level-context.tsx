@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-type Levels = [0, 1, 2, 3, 4, 5, 6][number];
+type Level = [0, 1, 2, 3, 4, 5, 6][number];
 
-const LevelContext = React.createContext<Levels>(0);
+const LevelContext = React.createContext<Level>(0);
 
 type LevelProps = {
   children: React.ReactNode;
-  value: number;
+  value: Level;
 };
 
 export const LevelProvider = ({ children, value }: LevelProps) => {
   return (
-    <LevelContext.Provider value={(value + 1) as Levels}>
+    <LevelContext.Provider value={(value + 1) as Level}>
       {children}
     </LevelContext.Provider>
   );
