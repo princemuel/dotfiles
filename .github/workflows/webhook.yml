@@ -9,6 +9,8 @@ jobs:
     name: Update Portfolio Website On Markdown Update
     runs-on: ubuntu-latest
     steps:
-      - name: REST API with curl
+      - shell: bash
+        env:
+          REVALIDATE_URL: ${{ secrets.REVALIDATE_URL }}
         run: |
-          curl -X GET ${{secrets.REVALIDATE_URL}}
+          curl -X GET "$REVALIDATE_URL"
