@@ -1,9 +1,10 @@
 name: Update Portfolio Website
 on:
   push:
-    tags:
-      - "**"
-  workflow_dispatch:
+    branches: [main]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [main]
 jobs:
   update-site:
     name: Update Portfolio Website On Markdown Update
