@@ -1,0 +1,53 @@
+[user]
+	name = Prince Muel
+	email = vansomecsam@gmail.com
+	signingkey = 712B561B23956DBB
+[core]
+	editor = code --wait
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color]
+	ui = auto
+[pull]
+	rebase = false
+[commit]
+	template = ~/.gitmessage.txt
+	gpgsign = true
+[trailer]
+	separators = ":#"
+[trailer "sign"]
+	key = "Signed-off-by: "
+	ifmissing = add
+	command = echo \"$(git config --global user.name) <$(git config --global user.email)>\"
+[trailer "ref"]
+	key = "Reference-to: "
+	ifExists = replace
+	cmd = ~/bin/glog-grep
+[trailer "help"]
+	key = "Helped-by: "
+	ifExists = addIfDifferentNeighbor
+	cmd = ~/bin/glog-find-author
+[trailer "fix"]
+	key = "Fixes #"
+[trailer "see"]
+	key = "See-also: "
+	ifExists = replace
+	ifMissing = doNothing
+	command = git log -1 --oneline --format=\"%h (%s)\" --abbrev-commit --abbrev=14 $ARG
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = code
+[mergetool "code"]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[credential]
+	credentialStore = gpg
