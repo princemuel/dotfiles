@@ -1,0 +1,57 @@
+#Subject line (try to keep under 50 characters)
+***subject***
+
+***message***
+
+Fixes:
+Cc:
+Reviewed-by:
+
+#Multi-line description of commit, feel free to be detailed.
+# Example:
+# If applied, this commit will...(your subject line here)
+# e.g fix: Fix typo in introduction to user guide
+
+# Header: type is mandatory and scope is optional
+# scope should be the area affected e.g. api, ui etc
+# use the imperative, present tense: "change" not "changed" nor "changes", don't end with a period
+# No more than 50 chars. #### 50 chars is here:  #
+# Remember blank line between header and body.
+
+# type must be one of the following:-
+
+# build: Changes that affect the build system or external dependencies (example scopes: nodejs, gulp, broccoli, npm, yarn)
+# ci: Changes to configuration files and scripts
+# docs: Documentation only changes
+# feat: A new feature
+# fix: A bug fix
+# perf: A code change that improves performance
+# refactor: A code change that neither fixes a bug nor adds a feature
+# style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+# test: Adding missing tests or correcting existing tests
+# chore: maintainance
+
+
+
+# Body: Explain _what_ and _why_ (not _how_). Include task ID (Jira issue).
+# Wrap at 72 chars. ################################## which is here:
+
+# Footer: should contain any information about Breaking Changes and is also the place to reference GitHub issues that this commit closes.
+# Breaking Changes should start with the word BREAKING CHANGE: with a space or two newlines. The rest of the commit message is then used for this
+
+# At the end: Include Co-authored-by for all contributors.
+# Include at least one empty line before it. Format:
+# Co-authored-by: name <user@users.noreply.github.com>
+
+# Sample:
+
+## fix(release): need to depend on latest rxjs and zone.js
+
+## The version in our package.json gets copied to the one we publish, and users need the latest of these.
+
+
+# How to Write a Git Commit Message:
+
+# https://chris.beams.io/posts/git-commit/
+# https://www.conventionalcommits.org/en/v1.0.0/
+# https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#commit

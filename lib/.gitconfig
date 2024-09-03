@@ -1,7 +1,7 @@
 [user]
 	name = Prince Muel
 	email = vansomecsam@gmail.com
-	signingkey = 712B561B23956DBB
+	signingkey = abcf
 [core]
 	editor = code --wait
 	autocrlf = input
