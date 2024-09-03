@@ -7,4 +7,3 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType c,cpp,java,php,ruby,python,js,less,styl,html,css autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-
